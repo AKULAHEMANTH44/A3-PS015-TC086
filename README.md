@@ -123,6 +123,14 @@ Browser-reported connection information may also vary depending on browser suppo
 ## 10. Conclusion
 
 NETNEXUS – NetExplain aims to make network connectivity diagnosis more accessible and understandable. By combining browser-based connectivity checks, device information, performance measurements, controlled fault simulations and downloadable reports, the system helps users understand observable network conditions through a simple web application.
+## 🌐 Live Website
+
+**NETNEXUS – NetExplain is live!**
+
+Visit our deployed application:
+
+🔗 **[Open NETNEXUS Live Website](https://a3-ps015-tc086.onrender.com/)**
+
 
 ---
 
