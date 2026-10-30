@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NETNEXUS | NetExplain</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h2>NETNEXUS</h2>
+    <span>DIAGNOSTIC ENGINE ONLINE</span>
+</header>
+
+<section class="hero">
+    <p class="tag">AIORI - PS-015</p>
+    <h1>NetExplain</h1>
+    <h2>Explainable Connectivity Diagnostic System</h2>
+    <p>Understand network problems through evidence-based diagnostics.</p>
+    <button onclick="diagnose()">START LIVE DIAGNOSIS</button>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <h2>Live Network Diagnosis</h2>
+        <p>Check browser connectivity to NETNEXUS and selected external services.</p>
+        <div id="liveResult">Waiting for diagnosis...</div>
+    </div>
+
+    <div class="card">
+        <h2>Computer-Based Network Check</h2>
+        <p>Inspect device and connection information available to your browser.</p>
+        <button onclick="runComputerCheck()">CHECK THIS DEVICE</button>
+        <div id="computerResult">Waiting for device check...</div>
+    </div>
+
+    <div class="card">
+        <h2>Network Performance Test</h2>
+        <p>Measure data transfer speed between this browser and the NETNEXUS server.</p>
+        <button id="performanceButton" onclick="runPerformanceTest()">START PERFORMANCE TEST</button>
+        <div id="performanceResult">Waiting for performance test...</div>
+    </div>
+
+    <div class="card">
+        <h2>Controlled Fault Scenarios</h2>
+        <select id="scenario">
+            <option>Normal Connection</option>
+            <option>Gateway Unreachable</option>
+            <option>DNS Failure</option>
+            <option>Induced Packet Loss</option>
+            <option>Network Congestion</option>
+            <option>Inconclusive</option>
+        </select>
+        <button onclick="runScenario()">RUN SCENARIO</button>
+        <div id="scenarioResult"></div>
+    </div>
+
+    <div class="card">
+        <h2>Reports & Evidence</h2>
+        <button onclick="downloadReport()">DOWNLOAD REPORT</button>
+    </div>
+
+    <div class="card history-card">
+        <h2>Diagnosis History</h2>
+        <p>Previously completed diagnoses and simulations.</p>
+        <div id="historyList"></div>
+        <div id="historyDetails"></div>
+        <button class="clear-history" onclick="clearHistory()">CLEAR ALL HISTORY</button>
+    </div>
+</section>
+
+<footer>NETNEXUS | NetExplain | AIORI PS-015</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
